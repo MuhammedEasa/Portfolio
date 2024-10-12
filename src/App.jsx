@@ -2,6 +2,8 @@ import Nav from "./components/Nav";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 function App() {
   return (
@@ -18,6 +20,11 @@ function App() {
           <FaGithub className="hover:text-orange-500" />
           <FaInstagram className="hover:text-orange-500" />
         </div>
+      </div>
+
+      <div className="wrapper">
+        <Hero/>
+        <About/>
       </div>
     </>
   );
