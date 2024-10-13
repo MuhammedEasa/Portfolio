@@ -1,20 +1,20 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-const Contact = () => {
+import PropTypes from "prop-types";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+
+const Contact = ({ id }) => {
   return (
-    <section className="h-screen relative snap-start panel">
-      <div className="shape size-44 absolute right-60 top-36"></div>
-      <div className=" backdrop-blur-2xl flex items-center justify-between px-60 py-32">
-        <p className="text-4xl w-96">
+    <section id={id} className="h-screen relative snap-start panel">
+      <div className="shape size-24 lg:size-44 absolute right-4 lg:right-60 top-20 lg:top-36"></div>
+      <div className="backdrop-blur-2xl flex flex-col lg:flex-row items-center justify-between px-4 lg:px-60 py-16 lg:py-32">
+        <p className="text-2xl lg:text-4xl w-full lg:w-96 mb-8 lg:mb-0">
           Let&apos;s mix our skills with your ideas and create something
-          Innoative
+          Innovative
         </p>
-        <button className="glass-btn size-48 rounded-full text-lg">
+        <button className="glass-btn size-32 lg:size-48 rounded-full text-base lg:text-lg">
           Start a project
         </button>
       </div>
-      <div className="px-60 py-20 flex items-center justify-between">
+      <div className="px-4 lg:px-60 py-8 lg:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
         <div className="space-y-2">
           <p className="opacity-60">Phone Number</p>
           <p>+91 7012526343</p>
@@ -55,15 +55,20 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <footer className="text-xl px-60 py-10 opacity-50 flex justify-between items-center">
-        <div className="text-lg">&copy;2024 All rights reserved</div>
-        <div className="flex items-center gap-8"></div>
-        <p>Eng</p>
-        <div className="w-20 h-[1px] bg-white/50"></div>
-        <p>Ar</p>
+      <footer className="text-sm lg:text-xl px-4 lg:px-60 py-4 lg:py-10 opacity-50 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+        <div className="text-sm lg:text-lg">&copy;2024 All rights reserved</div>
+        <div className="flex items-center gap-4 lg:gap-8">
+          <p>Eng</p>
+          <div className="w-10 lg:w-20 h-[1px] bg-white/50"></div>
+          <p>Ar</p>
+        </div>
       </footer>
     </section>
   );
+};
+
+Contact.propTypes = {
+  id: PropTypes.string.isRequired,
 };
 
 export default Contact;

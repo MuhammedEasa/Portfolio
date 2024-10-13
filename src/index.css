@@ -8,24 +8,29 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    font-family: "emporia";
+    font-family: "emporia", sans-serif;
     background-color: #1b1b1b;
     color: white;
   }
-  ::-webkit-scrollbar{
+
+  ::-webkit-scrollbar {
     width: 0;
   }
 }
 
 @layer components {
-
-  .wrapper{
+  .wrapper {
     overflow: scroll;
     scroll-snap-type: y mandatory;
     max-height: 100vh;
     scroll-behavior: smooth;
   }
+
   .shape {
     background: linear-gradient(
       rgba(238, 0, 0, 1) 0%,
@@ -36,9 +41,9 @@
     opacity: 0.7;
   }
 
-  .glass-btn{
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0));
-    box-shadow: 0 4px 30px rgba(0, 0,0, 0.1);
+  .glass-btn {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14px);
   }
 }
