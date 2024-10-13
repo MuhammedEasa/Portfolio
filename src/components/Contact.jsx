@@ -10,8 +10,13 @@ const Contact = ({ id }) => {
           Let&apos;s mix our skills with your ideas and create something
           Innovative
         </p>
-        <button className="glass-btn size-32 lg:size-48 rounded-full text-base lg:text-lg">
-          Start a project
+        <button
+          className="glass-btn size-32 lg:size-48 rounded-full text-base lg:text-lg"
+          onClick={() => {
+            window.location.href = "tel:+917012526343";
+          }}
+        >
+          Message Me
         </button>
       </div>
       <div className="px-4 lg:px-60 py-8 lg:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
@@ -58,9 +63,9 @@ const Contact = ({ id }) => {
       <footer className="text-sm lg:text-xl px-4 lg:px-60 py-4 lg:py-10 opacity-50 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
         <div className="text-sm lg:text-lg">&copy;2024 All rights reserved</div>
         <div className="flex items-center gap-4 lg:gap-8">
-          <p>Eng</p>
+          {/* <p>Eng</p>
           <div className="w-10 lg:w-20 h-[1px] bg-white/50"></div>
-          <p>Ar</p>
+          <p>Ar</p> */}
         </div>
       </footer>
     </section>

@@ -45,9 +45,9 @@ function App() {
       <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className="fixed bottom-0 w-full lg:h-[70vh] lg:w-24 flex flex-row lg:flex-col justify-between items-center p-4 lg:p-10 z-40">
         <div className="flex items-center gap-4 lg:gap-8 lg:-rotate-90">
-          <p className="text-sm lg:text-base">Eng</p>
+          {/* <p className="text-sm lg:text-base">Eng</p>
           <div className="w-10 lg:w-20 h-[1px] bg-white/50"></div>
-          <p className="text-sm lg:text-base">Ar</p>
+          <p className="text-sm lg:text-base">Ar</p> */}
         </div>
         <div className="flex lg:flex-col space-x-4 lg:space-x-0 lg:space-y-8 [&>*]:cursor-pointer">
           <FaLinkedin
