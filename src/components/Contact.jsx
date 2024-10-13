@@ -32,6 +32,13 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <footer className="text-xl px-60 py-10 opacity-50 flex justify-between items-center">
+        <div className="text-lg">&copy;2024 All rights reserved</div>
+        <div className="flex items-center gap-8"></div>
+        <p>Eng</p>
+        <div className="w-20 h-[1px] bg-white/50"></div>
+        <p>Ar</p>
+      </footer>
     </section>
   );
 };
