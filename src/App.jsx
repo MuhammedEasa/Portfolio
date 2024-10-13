@@ -9,21 +9,21 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function App() {
-gsap.registerPlugin(ScrollTrigger)
-  useGSAP(()=>{
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
     ScrollTrigger.defaults({
-      scroller:".wrapper",
+      scroller: ".wrapper",
     });
-    gsap.utils.toArray(".panel").forEach((panel,index)=>{
-      gsap.to(`.bullet-${index+1}`,{
-        background:"#fff",
-        scrollTrigger:{
-          trigger:panel,
-          toggleActions:"play reverse play reverse"
+    gsap.utils.toArray(".panel").forEach((panel, index) => {
+      gsap.to(`.bullet-${index + 1}`, {
+        background: "#fff",
+        scrollTrigger: {
+          trigger: panel,
+          toggleActions: "play reverse play reverse",
         },
       });
-    })
-  })
+    });
+  });
   return (
     <>
       <Nav />
@@ -34,9 +34,32 @@ gsap.registerPlugin(ScrollTrigger)
           <p>Ar</p>
         </div>
         <div className="space-y-8 [&>8]:cursor-pointer">
-          <FaLinkedin className="hover:text-orange-500" />
-          <FaGithub className="hover:text-orange-500" />
-          <FaInstagram className="hover:text-orange-500" />
+          <FaLinkedin
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/muhammed-easa/",
+                "_blank"
+              )
+            }
+            className="hover:text-orange-500 cursor-pointer"
+          />
+
+          <FaGithub
+            onClick={() =>
+              window.open("https://github.com/MuhammedEasa/", "_blank")
+            }
+            className="hover:text-orange-500 cursor-pointer"
+          />
+
+          <FaInstagram
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/al_hafiz_muhammed_easa/",
+                "_blank"
+              )
+            }
+            className="hover:text-orange-500 cursor-pointer"
+          />
         </div>
       </div>
       <div className="fixed space-y-6 top-2/4 right-10 z-50">

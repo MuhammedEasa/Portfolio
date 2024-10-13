@@ -26,9 +26,32 @@ const Contact = () => {
         <div className="space-y-2">
           <p className="opacity-60">Social media</p>
           <div className="flex gap-8">
-            <FaLinkedin className="hover:text-orange-500" />
-            <FaGithub className="hover:text-orange-500" />
-            <FaInstagram className="hover:text-orange-500" />
+            <FaLinkedin
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/muhammed-easa/",
+                  "_blank"
+                )
+              }
+              className="hover:text-orange-500 cursor-pointer"
+            />
+
+            <FaGithub
+              onClick={() =>
+                window.open("https://github.com/MuhammedEasa/", "_blank")
+              }
+              className="hover:text-orange-500 cursor-pointer"
+            />
+
+            <FaInstagram
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/al_hafiz_muhammed_easa/",
+                  "_blank"
+                )
+              }
+              className="hover:text-orange-500 cursor-pointer"
+            />
           </div>
         </div>
       </div>
