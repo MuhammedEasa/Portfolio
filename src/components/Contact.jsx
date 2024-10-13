@@ -33,14 +33,14 @@ const Contact = ({ id }) => {
                   "_blank"
                 )
               }
-              className="hover:text-orange-500 cursor-pointer"
+              className="hover:text-indigo-500 cursor-pointer"
             />
 
             <FaGithub
               onClick={() =>
                 window.open("https://github.com/MuhammedEasa/", "_blank")
               }
-              className="hover:text-orange-500 cursor-pointer"
+              className="hover:text-indigo-500 cursor-pointer"
             />
 
             <FaInstagram
@@ -50,7 +50,7 @@ const Contact = ({ id }) => {
                   "_blank"
                 )
               }
-              className="hover:text-orange-500 cursor-pointer"
+              className="hover:text-indigo-500 cursor-pointer"
             />
           </div>
         </div>

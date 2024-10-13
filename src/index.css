@@ -14,8 +14,8 @@
 
   body {
     font-family: "emporia", sans-serif;
-    background-color: #1b1b1b;
-    color: white;
+    background-color: #10182b;
+    color: #d3d3d3;
   }
 
   ::-webkit-scrollbar {
@@ -33,16 +33,19 @@
 
   .shape {
     background: linear-gradient(
-      rgba(238, 0, 0, 1) 0%,
-      rgba(238, 163, 0, 1) 76%,
-      rgba(252, 252, 252, 1) 100%
+      rgba(75, 0, 130, 1) 0%,
+      rgba(138, 43, 226, 1) 76%,
+      rgba(240, 240, 240, 1) 100%
     );
     border-radius: 25rem 25rem 0 0;
     opacity: 0.7;
   }
 
   .glass-btn {
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0));
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14px);
   }
