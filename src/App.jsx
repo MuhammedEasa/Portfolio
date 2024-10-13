@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <div className="wrapper">
         <Hero/>
         <About/>
+        <Contact/>
       </div>
     </>
   );
