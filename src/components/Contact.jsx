@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section className="h-screen relative">
+    <section className="h-screen relative snap-start panel">
       <div className="shape size-44 absolute right-60 top-36"></div>
       <div className=" backdrop-blur-2xl flex items-center justify-between px-60 py-32">
         <p className="text-4xl w-96">

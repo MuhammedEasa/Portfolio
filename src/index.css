@@ -13,9 +13,19 @@
     background-color: #1b1b1b;
     color: white;
   }
+  ::-webkit-scrollbar{
+    width: 0;
+  }
 }
 
 @layer components {
+
+  .wrapper{
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+  }
   .shape {
     background: linear-gradient(
       rgba(238, 0, 0, 1) 0%,
