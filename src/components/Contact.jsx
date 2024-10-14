@@ -16,7 +16,7 @@ const Contact = ({ id }) => {
             window.location.href = "tel:+917012526343";
           }}
         >
-          Message Me
+          Call Me
         </button>
       </div>
       <div className="px-4 lg:px-60 py-8 lg:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
