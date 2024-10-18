@@ -13,10 +13,10 @@ const Contact = ({ id }) => {
         <button
           className="glass-btn size-32 lg:size-48 rounded-full text-base lg:text-lg"
           onClick={() => {
-            window.location.href = "tel:+917012526343";
+            window.location.href = "https://wa.me/+917012526343";
           }}
         >
-          Call Me
+          Message me on WhatsApp
         </button>
       </div>
       <div className="px-4 lg:px-60 py-8 lg:py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
